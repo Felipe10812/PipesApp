@@ -1,5 +1,8 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// Se debe importar cuando se tengo algun componente con alguna clase de animacion
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppComponent } from './app.component';
 
@@ -19,12 +22,14 @@ registerLocaleData(localEs);
     AppComponent,
   ],
   imports: [
+    // Propios de Angular 
     BrowserModule,
     AppRouterModule,
     SharedModule,
 
     // Tambien es necesario importarlo para que reconozca el ng en los demas modulos 
     VentasModule,
+    BrowserAnimationsModule,
   ],
   exports: [
 
