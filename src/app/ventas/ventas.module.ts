@@ -6,14 +6,23 @@ import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+import { mayusculasPipe } from './pipes/mayusculas.pipe';
+import { vuelaPipe } from './pipes/vuela.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 @NgModule({
   declarations: [
+    // Componentes
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
+
+    // Pipes
+    mayusculasPipe,
+    vuelaPipe,
+    OrdenarPipe,
   ],
   // Cuando se usan los componentes fuera del modulo de ventas se deben exportar 
   exports: [

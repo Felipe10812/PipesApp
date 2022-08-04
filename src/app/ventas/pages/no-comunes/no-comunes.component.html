@@ -12,8 +12,8 @@
                 Soy {{nombre}}, estoy {{ genero | i18nSelect:saludoMapa }} y no se que escribir
             </p>
 
-            <p-button type="button" (onClick)="cambiarClinete()" label="Cambiar cliente"
-                class="p-button-raised p-button-rounded p-button-warning"></p-button>
+            <button pButton type="button" label="Cambiar cliente" (click)="cambiarClinete()"
+                class="p-button-raised p-button-rounded p-button-warning"></button>
 
         </p-fieldset>
     </div>
